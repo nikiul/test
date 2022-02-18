@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="calculate">
+
+        <div class="container">
+
+            <div class="calculate__content">
+
+                <h1 class="caclulate__title">Калькулятор займа под ПТС</h1>
+
+                <form class="calculate__form">
+
+                    <div class="calculate__left">
+
+                        <div class="calculate__type">
+
+                            <p class="calculate__type-title">Тип платежа</p>
+
+                            <div class="calculate__type-tabs-wrap">
+
+                                <div class="calculate__tab calculate__tab_left calculate__tab_active">Дифференцированный</div>
+
+                                <div class="calculate__tab calculate__tab_right">Аннуитетный</div>
+                                
+                            </div>
+
+                        </div>
+
+                        <div class="calculate__item">
+
+                            <div class="calculate__item-top">
+
+                                <p class="calculate__item-top-left">Сумма займа</p>
+
+                                <div class="calculate__item-top-right">
+
+                                    <output name="sum" id="sum" for="sumInput">15 000</output>
+                                    
+                                    <span>₽</span>
+
+                                </div>
+
+                            </div>
+
+                            <input class="calculate__item-line" type="range" id="sumInput" name="sumInput" min="15000" max="1000000" step="1000" value="1" oninput="sum.value=sumInput.value">
+
+                            <div class="calculate__item-bottom">
+
+                                <p class="calculate__item-bottom-left">от 15 000 ₽</p>
+
+                                <p class="calculate__item-bottom-right">до 1 000 000 ₽</p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="calculate__item">
+
+                            <div class="calculate__item-top">
+
+                                <p class="calculate__item-top-left">Срок займа</p>
+
+                                <div class="calculate__item-top-right">
+
+                                    <output name="term" id="term" for="termInput">8</output>
+                                    
+                                    <span>мeсяцев</span>
+
+                                </div>
+
+                            </div>
+
+                            <input class="calculate__item-line" type="range" id="termInput" name="termInput" min="2" max="12" step="1" value="1" oninput="term.value=termInput.value">
+
+                            <div class="calculate__item-bottom">
+
+                                <p class="calculate__item-bottom-left">от 2 месяца</p>
+
+                                <p class="calculate__item-bottom-right">до 12 месяцев</p>
+
+                            </div>
+
+                        </div>
+
+                        <p class="calculate__desc">Условия выдачи займа могут отличаться, исходя из анализа документов и состояния вашего автомобиля</p>
+
+                    </div>
+
+                    <div class="calculate__righ">
+
+                        <div class="calculate__right-items-wrap">
+
+                            <div class="calculate__righ-item">
+
+                                <p class="calculate__right-item-title">Ставка</p>
+
+                                <p class="calculate__right-item-value">2.7%</p>
+
+                            </div>
+
+                            <div class="calculate__righ-item">
+
+                                <p class="calculate__right-item-title">Ежемесячный платеж</p>
+
+                                <p class="calculate__right-item-value">3 729 ₽</p>
+
+                            </div>
+                            
+                        </div>
+
+                        <button class="calculate__btn">Подать заявку</button>
+
+                        <p class="calculate__desc">Расчет займа предварительный</p>
+
+                    </div>            
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+    
+    <script src="libs/jQuery/jquery-3.6.0.min.js"></script>
+    <script src="js/script.min.js"></script>
+
+</body>
+</html>
